@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 700px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 4px;
+    text-align: left;
+    border: none;
+}
+
+td:nth-child(2) { /* This targets the Name column */
+    padding-right: 15px; /* Adjust the value as needed */
+}
+
+td:nth-child(3) { /* This targets the Name column */
+    padding-right: 15px; /* Adjust the value as needed */
+}
+
+td:first-child {
+    white-space: nowrap; /* Prevents wrapping in the Passenger column */
+}
+
+#payment-method{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#mobile-number{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.checkbox-group,
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"],
+.radio-group input[type="radio"] {
+    width: 30px;
+    /* margin-right: 10px; */
+}
+
+.btn-container {
+    margin-top: 10px;
+    text-align: right;
+}
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.save-btn { background-color: green; color: white; }
+.clear-btn { background-color: red; color: white; }
+.book-btn { background-color: orange; color: white; }

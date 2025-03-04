@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>IRCTC Ticket Booking</h2>
+
+        <!-- IRCTC Credentials Section -->
+        <section class="section">
+            <h3>IRCTC Credentials</h3>
+            <label>Username: <input type="text" id="username"></label>
+            <label>Password: <input type="password" id="password"></label>
+        </section>
+
+        <!-- Journey Details Section -->
+        <section class="section">
+            <h3>Journey Details</h3>
+            <label>From: <input type="text" id="fromStation"></label>
+            <label>To: <input type="text" id="toStation"></label>
+            <label>Train No: <input type="text" id="trainNumber"></label>
+            <label>Class: <select id="trainClass">
+                    <option>AC First Class (1A)</option>
+                    <option>AC 3 Tier (3A)</option>
+                    <option>AC 2 Tier (2A)</option>
+                    <option>AC Chair Car (CC)</option>
+                    <option>AC 3 Economy (3E)</option>
+                    <option>Exec. Chair Car (EC)</option>
+                    <option>Sleeper (SL)</option>
+                    <option>Second Sitting (2S)</option>
+                </select></label>
+            <label>Quota: <select id="quota">
+                    <option>General</option>
+                    <option>Tatkal</option>
+                    <option>Ladies</option>
+                    <option>Senior Citizen</option>
+                    <option>Person with Disability</option>
+                </select></label>
+        </section>
+
+        <!-- Passenger Details Section -->
+        <section class="section" id="passengerDetails">
+            <h3>Passenger Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Passenger</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Berth</th>
+                        <th>Food</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Passenger 1</td>
+                        <td><input type="text" placeholder="Name"></td>
+                        <td><input type="number" placeholder="Age"></td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Birth</option>
+                                <option>Upper</option>
+                                <option>Lower</option>
+                                <option>Middle</option>
+                                <option>Side Upper</option>
+                                <option>Side Lower</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>No Food</option>
+                                <option>Veg</option>
+                                <option>Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Passenger 2</td>
+                        <td><input type="text" placeholder="Name"></td>
+                        <td><input type="number" placeholder="Age"></td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select><option value="" disabled selected>Select Birth</option>
+                                <option>Upper</option>
+                                <option>Lower</option>
+                                <option>Middle</option>
+                                <option>Side Upper</option>
+                                <option>Side Lower</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>No Food</option>
+                                <option>Veg</option>
+                                <option>Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Passenger 3</td>
+                        <td><input type="text" placeholder="Name"></td>
+                        <td><input type="number" placeholder="Age"></td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Birth</option>
+                                <option>Upper</option>
+                                <option>Lower</option>
+                                <option>Middle</option>
+                                <option>Side Upper</option>
+                                <option>Side Lower</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>No Food</option>
+                                <option>Veg</option>
+                                <option>Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Passenger 4</td>
+                        <td><input type="text" placeholder="Name"></td>
+                        <td><input type="number" placeholder="Age"></td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="" disabled selected>Select Birth</option>
+                                <option>Upper</option>
+                                <option>Lower</option>
+                                <option>Middle</option>
+                                <option>Side Upper</option>
+                                <option>Side Lower</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>No Food</option>
+                                <option>Veg</option>
+                                <option>Non-Veg</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Additional Preferences -->
+        <div class="section">
+            <h3>Additional Choice</h3>
+
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method">
+                    <option>UPI QR Code</option>
+                    <option>Credit/Debit Card</option>
+                    <option>Net Banking</option>
+                    <option>Wallet</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="auto-upgrade">
+                <label style="margin: 0;" for="auto-upgrade">Consider Auto Upgradation</label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirm-berth">
+                <label style="margin: 2px;" for="confirm-berth">Book Only If Confirm Berths Are Allotted</label>
+            </div>
+
+            <div class="form-group">
+                <label>Travel Insurance:</label>
+                <div class="radio-group">
+                    <input style="margin: 0;" type="radio" id="insurance-yes" name="insurance">
+                    <label style="margin: 0;" for="insurance-yes">Yes</label>
+                    <input style="margin: 0;" type="radio" id="insurance-no" name="insurance">
+                    <label style="margin: 0;" for="insurance-no">No</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile-number">Mobile Number</label>
+                <input type="text" id="mobile-number" placeholder="Enter Mobile Number">
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="captcha">
+                <label style="margin: 0;" for="captcha">Captcha Auto Fill</label>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-container">
+            <button class="btn save-btn" id="save-btn">Save</button>
+            <button class="btn load-btn" id="load-btn">Load</button>
+            <button class="btn clear-btn" id="clear-btn">Clear</button>
+            <button class="btn book-btn">Book</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
