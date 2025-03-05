@@ -23,27 +23,44 @@
         <!-- Journey Details Section -->
         <section class="section">
             <h3>Journey Details</h3>
-            <label>From: <input type="text" id="fromStation"></label>
-            <label>To: <input type="text" id="toStation"></label>
+
+            <label>From:
+                <input type="text" id="fromStation" autocomplete="off">
+                <div id="fromStationDropdown" class="dropdown"></div>
+            </label>
+
+            <label>To:
+                <input type="text" id="toStation" autocomplete="off">
+                <div id="toStationDropdown" class="dropdown"></div>
+            </label>
+
             <label>Train No: <input type="text" id="trainNumber"></label>
-            <label>Class: <select id="trainClass">
-                    <option>AC First Class (1A)</option>
-                    <option>AC 3 Tier (3A)</option>
-                    <option>AC 2 Tier (2A)</option>
-                    <option>AC Chair Car (CC)</option>
-                    <option>AC 3 Economy (3E)</option>
-                    <option>Exec. Chair Car (EC)</option>
-                    <option>Sleeper (SL)</option>
-                    <option>Second Sitting (2S)</option>
-                </select></label>
-            <label>Quota: <select id="quota">
-                    <option>General</option>
-                    <option>Tatkal</option>
-                    <option>Ladies</option>
-                    <option>Senior Citizen</option>
-                    <option>Person with Disability</option>
-                </select></label>
+
+            <label>Class:
+                <select id="trainClass">
+                    <option value="1A">AC First Class (1A)</option>
+                    <option value="3A">AC 3 Tier (3A)</option>
+                    <option value="2A">AC 2 Tier (2A)</option>
+                    <option value="CC">AC Chair Car (CC)</option>
+                    <option value="3E">AC 3 Economy (3E)</option>
+                    <option value="EC">Exec. Chair Car (EC)</option>
+                    <option value="SL">Sleeper (SL)</option>
+                    <option value="2S">Second Sitting (2S)</option>
+                </select>
+            </label>
+
+            <label>Quota:
+                <select id="quota">
+                    <option value="General">General</option>
+                    <option value="Tatkal">Tatkal</option>
+                    <option value="Ladies">Ladies</option>
+                    <option value="Senior">Senior Citizen</option>
+                    <option value="PWD">Person with Disability</option>
+                </select>
+            </label>
         </section>
+
+
 
         <!-- Passenger Details Section -->
         <section class="section" id="passengerDetails">
@@ -62,10 +79,10 @@
                 <tbody>
                     <tr>
                         <td>Passenger 1</td>
-                        <td><input type="text" placeholder="Name"></td>
-                        <td><input type="number" placeholder="Age"></td>
+                        <td><input type="text" id="passenger1-name" placeholder="Name"></td>
+                        <td><input type="number" id="passenger1-age" placeholder="Age"></td>
                         <td>
-                            <select>
+                            <select id="passenger1-gender">
                                 <option value="" disabled selected>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -73,7 +90,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger1-berth">
                                 <option value="" disabled selected>Select Birth</option>
                                 <option>Upper</option>
                                 <option>Lower</option>
@@ -83,7 +100,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger1-food">
                                 <option>No Food</option>
                                 <option>Veg</option>
                                 <option>Non-Veg</option>
@@ -92,10 +109,10 @@
                     </tr>
                     <tr>
                         <td>Passenger 2</td>
-                        <td><input type="text" placeholder="Name"></td>
-                        <td><input type="number" placeholder="Age"></td>
+                        <td><input type="text" id="passenger2-name" placeholder="Name"></td>
+                        <td><input type="number" id="passenger2-age" placeholder="Age"></td>
                         <td>
-                            <select>
+                            <select id="passenger2-gender">
                                 <option value="" disabled selected>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -103,7 +120,8 @@
                             </select>
                         </td>
                         <td>
-                            <select><option value="" disabled selected>Select Birth</option>
+                            <select id="passenger2-berth">
+                                <option value="" disabled selected>Select Birth</option>
                                 <option>Upper</option>
                                 <option>Lower</option>
                                 <option>Middle</option>
@@ -112,7 +130,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger2-food">
                                 <option>No Food</option>
                                 <option>Veg</option>
                                 <option>Non-Veg</option>
@@ -121,10 +139,10 @@
                     </tr>
                     <tr>
                         <td>Passenger 3</td>
-                        <td><input type="text" placeholder="Name"></td>
-                        <td><input type="number" placeholder="Age"></td>
+                        <td><input type="text" id="passenger3-name" placeholder="Name"></td>
+                        <td><input type="number" id="passenger3-age" placeholder="Age"></td>
                         <td>
-                            <select>
+                            <select id="passenger3-gender">
                                 <option value="" disabled selected>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -132,7 +150,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger3-berth">
                                 <option value="" disabled selected>Select Birth</option>
                                 <option>Upper</option>
                                 <option>Lower</option>
@@ -142,7 +160,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger3-food">
                                 <option>No Food</option>
                                 <option>Veg</option>
                                 <option>Non-Veg</option>
@@ -151,10 +169,10 @@
                     </tr>
                     <tr>
                         <td>Passenger 4</td>
-                        <td><input type="text" placeholder="Name"></td>
-                        <td><input type="number" placeholder="Age"></td>
+                        <td><input type="text" id="passenger4-name" placeholder="Name"></td>
+                        <td><input type="number" id="passenger4-age" placeholder="Age"></td>
                         <td>
-                            <select>
+                            <select id="passenger4-gender">
                                 <option value="" disabled selected>Select Gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
@@ -162,7 +180,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger4-berth">
                                 <option value="" disabled selected>Select Birth</option>
                                 <option>Upper</option>
                                 <option>Lower</option>
@@ -172,7 +190,7 @@
                             </select>
                         </td>
                         <td>
-                            <select>
+                            <select id="passenger4-food">
                                 <option>No Food</option>
                                 <option>Veg</option>
                                 <option>Non-Veg</option>
@@ -182,6 +200,7 @@
                 </tbody>
             </table>
         </section>
+
 
         <!-- Additional Preferences -->
         <div class="section">
@@ -230,12 +249,14 @@
 
         <!-- Buttons -->
         <div class="btn-container">
-            <button class="btn save-btn" id="save-btn">Save</button>
-            <button class="btn load-btn" id="load-btn">Load</button>
-            <button class="btn clear-btn" id="clear-btn">Clear</button>
-            <button class="btn book-btn">Book</button>
+            <button class="btn save-btn" id="save">Save</button>
+            <button class="btn load-btn" id="load">Load</button>
+            <button class="btn clear-btn" id="clear">Clear</button>
+            <button class="btn book-btn" id="book">Book</button>
         </div>
     </div>
+
+
     <script src="popup.js"></script>
 </body>
 

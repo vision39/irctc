@@ -81,6 +81,27 @@ input, select {
     /* margin-right: 10px; */
 }
 
+.dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: calc(100% - 2px);
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown div:hover {
+    background: #f0f0f0;
+}
+
+
 .btn-container {
     margin-top: 10px;
     text-align: right;
@@ -96,3 +117,4 @@ input, select {
 .save-btn { background-color: green; color: white; }
 .clear-btn { background-color: red; color: white; }
 .book-btn { background-color: orange; color: white; }
+.load-btn { background-color: blue; color: white; }

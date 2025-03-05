@@ -1,20 +1,38 @@
 {
-    "manifest_version": 3,
-    "name": "IRCTC Ticket Booker",
-    "version": "1.0",
-    "description": "Auto-fill IRCTC ticket booking details",
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "web_accessible_resources": [
-      {
-        "resources": ["stations.json"],
-        "matches": ["<all_urls>"]
-      }
-    ]
-  }
-  
+  "manifest_version": 3,
+  "name": "IRCTC Auto Booker",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.irctc.co.in/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.irctc.co.in/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["station.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
