@@ -17776,6 +17776,11 @@
          "stnCity":"Ramdevra"
       },
       {
+         "stnCode":"RJA",
+         "stnName":"Rajnagar",
+         "stnCity":"Rajnagar"
+      },
+      {
          "stnCode":"RMM",
          "stnName":"Rameswaram",
          "stnCity":"Rameswaram"
