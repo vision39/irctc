@@ -12671,6 +12671,11 @@
          "stnCity":"Lusadiya"
       },
       {
+         "stnCode":"MBI",
+         "stnName":"Madhubani",
+         "stnCity":"Madhubani"
+      },
+      {
          "stnCode":"MCV",
          "stnName":"Macharya",
          "stnCity":"Macharya"
