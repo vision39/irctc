@@ -14351,11 +14351,6 @@
          "stnCity":"Mugat"
       },
       {
-         "stnCode":"MGS",
-         "stnName":"Mughal Sarai Junction",
-         "stnCity":"Mughal Sarai Junction"
-      },
-      {
          "stnCode":"MMA",
          "stnName":"Muhammadabad",
          "stnCity":"Muhammadabad"
@@ -16229,6 +16224,11 @@
          "stnCode":"PAR",
          "stnName":"Pandhurna",
          "stnCity":"Pandhurna"
+      },
+      {
+         "stnCode":"DDU",
+         "stnName":"DD Upadhyaya Junction",
+         "stnCity":"DD Upadhyaya Junction"
       },
       {
          "stnCode":"PMO",
